@@ -5,14 +5,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.*;
-import javax.swing.border.Border;
-
-import util.MyGraphics;
 
 public class GUI {
 
 	private JFrame frame;
-	private MyGraphics graphics;
+	private GraphicsManager graphics;
 	
 	public GUI(){
 		frame = new JFrame();
@@ -30,7 +27,7 @@ public class GUI {
 		JPanel board = new JPanel();
 		JPanel specs = new JPanel();
 		
-		graphics = new MyGraphics(5);
+		graphics = new GraphicsManager(5);
 		board.add(graphics);
 		
 		

@@ -1,4 +1,7 @@
-package util;
+package gui;
+
+import board.Board;
+import util.CellManager;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -8,11 +11,10 @@ import java.awt.Image;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionAdapter;
-import java.awt.event.MouseMotionListener;
 
 import javax.swing.JComponent;
 
-public class MyGraphics extends JComponent{
+public class GraphicsManager extends JComponent{
 
 	private int currentX, currentY, oldX, oldY;
 	private Graphics2D g2;
@@ -21,7 +23,7 @@ public class MyGraphics extends JComponent{
 	private CellManager manager;
 	private Board board;
 
-	public MyGraphics(int scale){
+	public GraphicsManager(int scale){
 		this.SCALE=scale;
 		board = new Board(500/SCALE, 500/SCALE, this);
 		setPreferredSize(new Dimension(500, 500));

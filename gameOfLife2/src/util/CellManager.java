@@ -1,5 +1,7 @@
 package util;
 
+import board.Board;
+
 public class CellManager extends Thread {
 
 	private boolean running=true;

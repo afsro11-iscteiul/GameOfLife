@@ -1,5 +1,3 @@
-package util;
-
 import gui.GUI;
 
 public class Main {
